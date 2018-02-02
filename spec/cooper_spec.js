@@ -1,11 +1,11 @@
 describe("Person", function() {
       var person;
 
-        beforeEach(function() {
-          person = new Person({
-            age: 32,
-            gender: 'Male',
-            distance: 4000
+      beforeEach(function() {
+        person = new Person({
+          age: 32,
+          gender: 'Male',
+          distance: 4000
         });
       });
 
@@ -18,15 +18,23 @@ describe("Person", function() {
       });
 
       it('Should return 4000 as distance', function() {
-          expect(person.distance).toEqual(4000);
+        expect(person.distance).toEqual(4000);
       });
 
       it('should return string "male"', function() {
-          expect(result(person)).toEqual('Male');
+        expect(result(person)).toEqual('Male');
       });
 
       it('Should return "excellent" as male 32, 4000 meters run', function() {
-          expect(excellent(person)).toEqual('Excellent');
+        expect(excellent(person)).toEqual('Excellent');
       });
 
-  });
+      it('Should return "poor" as female 13, 1000 meters run', function() {
+          youngfemale = new Person({
+            age: 13,
+            gender: 'Female',
+            distance: 1000
+          });
+          expect(result(youngfemale)).toEqual('Poor');
+        });
+      });

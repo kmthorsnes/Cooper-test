@@ -16,27 +16,31 @@ To undertake this test you will require:
 * The athlete warms up for 10 minutes
 * The assistant gives the command “GO”,  starts the stopwatch and the athlete commences the test
 * The assistant keeps the athlete informed of the remaining time at the end of each lap (400m)
-* The assistant blows the whistle when the 12 minutes has elapsed a
+* The assistant blows the whistle when the 12 minutes has elapsed and records the distance the athlete covered to the nearest 10 meters
 
 ## Getting your score in JavaScript
 
 1. Open https://kmthorsnes.github.io/cooper_test/index.html in your prefered browser
 2. Open console in your prefered browser.
- Enter your age and gender in the following format:
+3. Enter your age and gender in the following format:
 
 ```
 $ person = new Person(yourage, yourgender);
-$ result(person, yourdistanceinmeters);
 ```
 Gender should be entered like either:
 
 * Male <br/>or
 * Female
 
-Example:
+4. After this you should enter the total number of meters you ran durint the 10 minute Cooper test. 
+```
+$ result(person, yourdistanceinmeters);
+```
+Example of input:
 ```
 $ person = new Person(32, "male");
 $ result(person, 1800);
+=> Average
 ```
 After the result command the output will show if your run was either of the following: <br/>
 * Excellent

@@ -5,6 +5,9 @@ class Person {
     this.gender = gender;
   }
 
+  // kalle.result(3000);
+  // => Excellent
+
   result(distance) {
     // sets the different assessments results
     let assessment;
@@ -119,7 +122,7 @@ class Person {
           console.log(assessment);
           break;
 
-        case "male":
+      case "male":
           if(this.age >= 13 && this.age <= 14) {
             if(distance > 2700) {
               assessment = Excellent;
@@ -222,7 +225,8 @@ class Person {
           break;
 
       default:
-          console.log("It's gameover man, it's gameover..");
+        // console.log(assessment);
+        console.log("It's gameover man, it's gameover..");
     } // end of switch
-  }; // end of result-function
+  } // end of result-function
 }

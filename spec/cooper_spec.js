@@ -1,40 +1,21 @@
+/*jshint esversion: 6 */
 describe("Person", function() {
-      var person;
+    let person;
 
-      beforeEach(function() {
-        person = new Person({
-          age: 32,
-          gender: 'Male',
-          distance: 4000
-        });
-      });
+    beforeEach(function() {
+      person = new Person(32, 'Male');
+    });
 
-      it('Should return an age of 32', function() {
-        expect(person.age).toEqual(32);
-      });
+    it('Should return an age of 32', function() {
+      expect(person.age).toEqual(32);
+    });
 
-      it('Should return male as gender', function() {
-        expect(person.gender).toEqual('Male');
-      });
+    it('Should return male as gender', function() {
+      expect(person.gender).toEqual('Male');
+    });
 
-      it('Should return 4000 as distance', function() {
-        expect(person.distance).toEqual(4000);
-      });
+    it('should return Excellent', function() {
 
-      it('should return string "male"', function() {
-        expect(result(person)).toEqual('Male');
-      });
-
-      it('Should return "excellent" as male 32, 4000 meters run', function() {
-        expect(excellent(person)).toEqual('Excellent');
-      });
-
-      it('Should return "poor" as female 13, 1000 meters run', function() {
-          youngfemale = new Person({
-            age: 13,
-            gender: 'Female',
-            distance: 1000
-          });
-          expect(result(youngfemale)).toEqual('Poor');
-        });
-      });
+      expect(person.result(2000)).toEqual('Average');
+    });
+});

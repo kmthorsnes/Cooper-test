@@ -25,7 +25,7 @@ To undertake this test you will require:
 3. Enter your age and gender in the following format:
 
 ```
-$ person = new Person(yourage, yourgender);
+$ person = new Person(age, gender);
 ```
 Gender should be entered like either:
 
@@ -34,7 +34,7 @@ Gender should be entered like either:
 
 4. After this you should enter the total number of meters you ran durint the 10 minute Cooper test. 
 ```
-$ result(person, YourDistanceInMeters);
+$ result(person, yourDistanceInMeters);
 ```
 Example of input:
 ```

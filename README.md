@@ -32,7 +32,7 @@ Gender should be entered like either:
 * "Male" <br/>or
 * "Female"
 
-4. After this you should enter the total number of meters you ran durint the 10 minute Cooper test. 
+4. After this you should enter the total number of meters you ran durint the 10 minute Cooper test.
 ```
 $ result(person, yourDistanceInMeters);
 ```
@@ -50,5 +50,8 @@ After the result command the output will show if your run was either of the foll
 * Poor
 
 ## Acknowledgments
+
+* inBeween-method by Pointy
+https://stackoverflow.com/questions/6454198/check-a-range-of-numbers-in-an-if-condition
 
 * This product was powered by KalleBoll Inc.

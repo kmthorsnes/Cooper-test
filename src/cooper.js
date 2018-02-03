@@ -1,19 +1,21 @@
 /*jshint esversion: 6 */
+class Person {
+  constructor(age, gender) {
+    this.age = age;
+    this.gender = gender;
+  }
 
-function Person(age, gender) {
-  this.age = age;
-  this.gender = gender.toLowerCase();
-
-  result = (person, distance) => {
-    let assessment;
-
+  result(distance) {
     // sets the different assessments results
+    let assessment;
     const Excellent = 'Excellent';
     const AboveAverage = 'Above Average';
     const Average = 'Average';
     const BelowAverage = 'Below Average';
     const Poor = 'Poor';
 
+    // Performs different calculations depending
+    // on gender and age
     switch(this.gender) {
       case "female":
         if(this.age >= 13 && this.age <= 14) {

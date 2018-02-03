@@ -21,7 +21,7 @@ To undertake this test you will require:
 ## Getting your score in JavaScript
 
 1. Open https://kmthorsnes.github.io/cooper_test/index.html in your prefered browser
-2. Open console in your prefered browser.
+2. Open console
 3. Enter your age and gender in the following format:
 
 ```
@@ -29,16 +29,16 @@ $ person = new Person(yourage, yourgender);
 ```
 Gender should be entered like either:
 
-* Male <br/>or
-* Female
+* "Male" <br/>or
+* "Female"
 
 4. After this you should enter the total number of meters you ran durint the 10 minute Cooper test. 
 ```
-$ result(person, yourdistanceinmeters);
+$ result(person, YourDistanceInMeters);
 ```
 Example of input:
 ```
-$ person = new Person(32, "male");
+$ person = new Person(32, "Male");
 $ result(person, 1800);
 => Average
 ```
